@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-import io
+import io 
 import re
 import sys
 
-def convert(file_name):
+def convert(file_name): 
 
     try:
         # Open new csv file
@@ -16,7 +16,7 @@ def convert(file_name):
                           
     except FileNotFoundError:
         print('File not found')
-        sys.exit(1)
+        sys.exit(1) # .exit 
 
     except Exception as e:
         print('Error:', e)

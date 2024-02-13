@@ -7,3 +7,4 @@ echo $?
 # Or nullify the exit status
 date
 echo $? > /dev/null
+
