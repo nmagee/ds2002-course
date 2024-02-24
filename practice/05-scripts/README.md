@@ -63,6 +63,24 @@ arguments when invoking from the command-line:
 - `$2` is the second parameter ...
 - . . .
 
+`positional-args.sh`
+```
+#!/bin/bash
+
+echo "$0 <-- invoking script"
+echo "$1 <-- first parameter"
+echo "$2 <-- second parameter"
+```
+returns the following output:
+
+```
+$ ./positional-args.sh bananas blueberries
+
+./positional-args.sh <-- invoking script
+bananas <-- first parameter
+blueberries <-- second parameter
+```
+
 
 ### If/Else conditional logic:
 

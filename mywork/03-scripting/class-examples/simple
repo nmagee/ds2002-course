@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# This should echo something simple
+
+echo "Hello" $USER
