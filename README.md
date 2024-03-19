@@ -8,7 +8,7 @@ and tools will be distributed in this way so that we all have a common set of to
 This requires that you clone and stay current with the **course code respository** and have the appropriate
 tools to complete exercises. 
 
-## Updating your fork
+## Updating your fork 
 
 To stay current with new releases into the course repository, follow these steps:
 
