@@ -1,3 +1,4 @@
 *.DS_store*
 *_pycache_*
 .devcontainer/devcontainer.env
+.devcontainer/devcontainer.json

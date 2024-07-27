@@ -1,4 +1,4 @@
-requests==2.24.0
+requests
 redis
 boto3
 gsutil
@@ -6,9 +6,10 @@ uvicorn
 fastapi
 pydantic
 typing
-mysqlclient
 pipenv
 prettyprint
 dnspython
-pymongo==3.7.2
+pymongo
 chalice
+awscli
+mysqlclient

@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.163.1/containers/docker-existing-dockerfile
 {
-	"name": "DS3002 Course Container",
+	"name": "DS2002 Course Container",
 
 	// Sets the run context to one level up instead of the .devcontainer folder.
 	"context": "..",
@@ -10,20 +10,30 @@
 	"dockerFile": "../Dockerfile",
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": { 
-		"terminal.integrated.shell.linux": null
+	"customizations":{
+		"vscode": {
+			"settings": {"terminal.integrated.shell.linux": null},
+			"extensions": []
+		}
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [],
-	"runArgs": ["--env-file",".devcontainer/devcontainer.env"],
-	// "mounts": [ "source=/Users/nem2p/.aws,target=/root/.aws,type=bind" ],
+	// "runArgs": ["--env-file",".devcontainer/devcontainer.env"],
+	"mounts": [ 
+		"source=/Users/nmagee/.aws,target=/root/.aws,type=bind",
+		"source=/Users/nmagee/.ssh,target=/root/.ssh,type=bind"
+	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [8000, 8080],
+
+	"containerEnv": {
+    	"MY_CONTAINER_VAR": "some-value-here",
+    	"TWILIO_AUTH_TOKEN": "${localEnv:TWILIO_AUTH_TOKEN}"
+	},
 
 	// Uncomment the next line to run commands after the container is created - for example installing curl.
-	// "postCreateCommand": "apt-get update && apt-get install -y curl",
+	"postCreateCommand": "pip install -r /root/requirements.txt"
 
 	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
 	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
