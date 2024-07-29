@@ -1,0 +1,227 @@
+[
+  {
+    "_id": "6616cc90dc822680bafde1cf",
+    "index": 0,
+    "guid": "0f2b7d5a-d9e0-4a68-bdcf-9cb3710a94a3",
+    "isActive": true,
+    "balance": "$2,379.58",
+    "picture": "http://placehold.it/32x32",
+    "age": 20,
+    "eyeColor": "brown",
+    "name": "Lillian Buchanan",
+    "gender": "female",
+    "company": "CHILLIUM",
+    "email": "lillianbuchanan@chillium.com",
+    "phone": "+1 (909) 520-3724",
+    "address": "500 Ivan Court, Winston, Louisiana, 3243",
+    "about": "Commodo laborum et ex magna aute nisi. Consectetur cillum deserunt laboris et officia elit ipsum ad enim ea nostrud eiusmod voluptate ea. Amet magna consectetur ut veniam sint nisi cupidatat proident dolor. Pariatur nulla consequat ut fugiat occaecat amet mollit eiusmod proident consequat exercitation elit tempor veniam.\r\n",
+    "registered": "2015-05-18T11:20:51 +04:00",
+    "latitude": 2.805898,
+    "longitude": 147.181276,
+    "tags": [
+      "velit",
+      "laboris",
+      "commodo",
+      "non",
+      "consectetur",
+      "dolor",
+      "labore"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Angelica Gates"
+      },
+      {
+        "id": 1,
+        "name": "Carney Gomez"
+      },
+      {
+        "id": 2,
+        "name": "Catherine Suarez"
+      }
+    ],
+    "greeting": "Hello, Lillian Buchanan! You have 2 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "6616cc90cf5b031b50319164",
+    "index": 1,
+    "guid": "2c07bbe2-1fd2-4d36-a08a-d55e280cd0d5",
+    "isActive": true,
+    "balance": "$3,553.46",
+    "picture": "http://placehold.it/32x32",
+    "age": 21,
+    "eyeColor": "green",
+    "name": "Dorothy Johnston",
+    "gender": "female",
+    "company": "MARVANE",
+    "email": "dorothyjohnston@marvane.com",
+    "phone": "+1 (958) 528-2744",
+    "address": "482 Harbor Lane, Jacksonwald, Virgin Islands, 2740",
+    "about": "Veniam pariatur anim et commodo anim enim nulla aliquip. Consectetur sint magna ex sint esse magna veniam culpa elit ipsum et in. Dolore non dolore laborum enim. Irure tempor deserunt Lorem dolor adipisicing exercitation eiusmod exercitation occaecat. Irure laboris irure consectetur incididunt Lorem cillum elit non tempor consequat et nisi veniam. Do nisi cupidatat nulla sunt reprehenderit sunt consequat. Dolore culpa sint culpa nisi minim et Lorem ipsum voluptate consequat laborum irure aliquip nulla.\r\n",
+    "registered": "2022-04-12T06:15:27 +04:00",
+    "latitude": 70.462094,
+    "longitude": -151.272631,
+    "tags": [
+      "sint",
+      "pariatur",
+      "eiusmod",
+      "nisi",
+      "nostrud",
+      "enim",
+      "aute"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Irene Benson"
+      },
+      {
+        "id": 1,
+        "name": "Alisa Christian"
+      },
+      {
+        "id": 2,
+        "name": "Trina Burke"
+      }
+    ],
+    "greeting": "Hello, Dorothy Johnston! You have 5 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "6616cc9025a1756dce98a3da",
+    "index": 2,
+    "guid": "497d6141-3d9f-4ab3-b68c-8625700c64d5",
+    "isActive": true,
+    "balance": "$2,697.82",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "green",
+    "name": "Lela Rosario",
+    "gender": "female",
+    "company": "GRAINSPOT",
+    "email": "lelarosario@grainspot.com",
+    "phone": "+1 (815) 565-2400",
+    "address": "290 Noll Street, Century, Colorado, 136",
+    "about": "Dolore Lorem est nulla ea velit duis duis Lorem ex. Tempor ea et proident duis cupidatat. Dolore id nostrud excepteur ex ea mollit sit reprehenderit quis nulla et do irure. Aliqua consectetur tempor minim officia nostrud velit ut amet sit.\r\n",
+    "registered": "2022-06-25T03:16:51 +04:00",
+    "latitude": -46.309604,
+    "longitude": -90.737638,
+    "tags": [
+      "dolor",
+      "velit",
+      "est",
+      "excepteur",
+      "ut",
+      "sit",
+      "duis"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Marina Lane"
+      },
+      {
+        "id": 1,
+        "name": "Alba Tillman"
+      },
+      {
+        "id": 2,
+        "name": "Terrell Ramirez"
+      }
+    ],
+    "greeting": "Hello, Lela Rosario! You have 10 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "6616cc9098d82b782a975aae",
+    "index": 3,
+    "guid": "906bd051-5907-4f84-a728-48eafe1d138f",
+    "isActive": true,
+    "balance": "$3,407.91",
+    "picture": "http://placehold.it/32x32",
+    "age": 23,
+    "eyeColor": "brown",
+    "name": "Silva Pierce",
+    "gender": "male",
+    "company": "PRISMATIC",
+    "email": "silvapierce@prismatic.com",
+    "phone": "+1 (975) 547-2022",
+    "address": "770 Harwood Place, Coleville, South Dakota, 9171",
+    "about": "Velit incididunt cupidatat aliquip quis aliquip velit eu nisi irure incididunt ipsum laborum. Laboris irure incididunt pariatur officia. Aute aliqua velit adipisicing aliquip quis enim magna nulla sit aute.\r\n",
+    "registered": "2024-01-18T06:35:51 +05:00",
+    "latitude": -49.116294,
+    "longitude": 117.258585,
+    "tags": [
+      "voluptate",
+      "reprehenderit",
+      "aliquip",
+      "pariatur",
+      "ex",
+      "minim",
+      "ipsum"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Miriam Hyde"
+      },
+      {
+        "id": 1,
+        "name": "Harriet Guerra"
+      },
+      {
+        "id": 2,
+        "name": "Sherrie Mccormick"
+      }
+    ],
+    "greeting": "Hello, Silva Pierce! You have 4 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "6616cc90ccd78f7238564489",
+    "index": 4,
+    "guid": "31314550-99ce-4106-bd00-6376df99ac76",
+    "isActive": false,
+    "balance": "$3,424.54",
+    "picture": "http://placehold.it/32x32",
+    "age": 29,
+    "eyeColor": "blue",
+    "name": "Fowler Duncan",
+    "gender": "male",
+    "company": "MANTRIX",
+    "email": "fowlerduncan@mantrix.com",
+    "phone": "+1 (887) 508-3744",
+    "address": "250 Ashland Place, Oretta, Nevada, 1744",
+    "about": "Enim aliquip sit fugiat sit proident sint occaecat duis consequat adipisicing proident ut eu laboris. Ad minim proident sunt anim Lorem nisi cillum in. Nisi culpa veniam commodo eiusmod quis incididunt voluptate nostrud. Esse esse esse mollit labore ipsum commodo eu non.\r\n",
+    "registered": "2016-04-18T08:42:25 +04:00",
+    "latitude": -24.719972,
+    "longitude": -19.432794,
+    "tags": [
+      "tempor",
+      "elit",
+      "elit",
+      "enim",
+      "quis",
+      "pariatur",
+      "magna"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Velazquez Hays"
+      },
+      {
+        "id": 1,
+        "name": "Holder Rich"
+      },
+      {
+        "id": 2,
+        "name": "Hall Livingston"
+      }
+    ],
+    "greeting": "Hello, Fowler Duncan! You have 4 unread messages.",
+    "favoriteFruit": "banana"
+  }
+]

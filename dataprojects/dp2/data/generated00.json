@@ -1,0 +1,272 @@
+[
+  {
+    "_id": "6616cc76f3e36921c3b21936",
+    "index": 0,
+    "guid": "51735b0b-ad21-429d-9325-56bb0278e91c",
+    "isActive": true,
+    "balance": "$3,845.85",
+    "picture": "http://placehold.it/32x32",
+    "age": 27,
+    "eyeColor": "green",
+    "name": "Aguirre Vega",
+    "gender": "male",
+    "company": "INSOURCE",
+    "email": "aguirrevega@insource.com",
+    "phone": "+1 (818) 550-2025",
+    "address": "595 Hewes Street, Strykersville, Oregon, 4891",
+    "about": "Elit eu duis officia exercitation et do elit. Sunt amet cillum exercitation duis deserunt occaecat culpa culpa do. Est sint ut voluptate consequat pariatur est reprehenderit voluptate quis quis ad adipisicing cupidatat amet. Magna qui eiusmod velit pariatur qui proident nostrud qui eiusmod eu labore. Culpa in eu veniam pariatur excepteur quis est ut laboris voluptate nisi officia.\r\n",
+    "registered": "2019-08-08T11:54:40 +04:00",
+    "latitude": -25.11732,
+    "longitude": -45.081131,
+    "tags": [
+      "minim",
+      "consequat",
+      "esse",
+      "laborum",
+      "cillum",
+      "exercitation",
+      "do"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Knight Kelly"
+      },
+      {
+        "id": 1,
+        "name": "Lowe Jones"
+      },
+      {
+        "id": 2,
+        "name": "Vance Little"
+      }
+    ],
+    "greeting": "Hello, Aguirre Vega! You have 7 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "6616cc76cc6f3e8c9963dbea",
+    "index": 1,
+    "guid": "1ebf756c-2557-4828-a0c4-f913bc0865db",
+    "isActive": true,
+    "balance": "$1,581.03",
+    "picture": "http://placehold.it/32x32",
+    "age": 21,
+    "eyeColor": "brown",
+    "name": "Deanna Chavez",
+    "gender": "female",
+    "company": "NETPLODE",
+    "email": "deannachavez@netplode.com",
+    "phone": "+1 (844) 589-2016",
+    "address": "723 Osborn Street, Blanford, Tennessee, 9646",
+    "about": "Laboris fugiat excepteur Lorem ut. Cupidatat consectetur Lorem tempor amet pariatur. Minim aliquip officia cillum culpa laborum ex do minim ullamco. Eu commodo ullamco irure ad exercitation deserunt anim in est ullamco eu deserunt.\r\n",
+    "registered": "2015-12-15T03:38:21 +05:00",
+    "latitude": -42.770071,
+    "longitude": 127.285309,
+    "tags": [
+      "fugiat",
+      "Lorem",
+      "labore",
+      "ex",
+      "id",
+      "mollit",
+      "est"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Valdez Kerr"
+      },
+      {
+        "id": 1,
+        "name": "Shannon Patrick"
+      },
+      {
+        "id": 2,
+        "name": "Schneider Brown"
+      }
+    ],
+    "greeting": "Hello, Deanna Chavez! You have 1 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "6616cc762489ae58ab1d42f2",
+    "index": 2,
+    "guid": "f70d0e35-7d01-4032-bcae-8ee59d7a1083",
+    "isActive": true,
+    "balance": "$1,444.98",
+    "picture": "http://placehold.it/32x32",
+    "age": 20,
+    "eyeColor": "green",
+    "name": "Maria Wright",
+    "gender": "female",
+    "company": "GEOLOGIX",
+    "email": "mariawright@geologix.com",
+    "phone": "+1 (999) 534-3471",
+    "address": "681 Bayard Street, Fannett, Pennsylvania, 2382",
+    "about": "In irure consequat amet occaecat amet dolor cupidatat pariatur labore amet labore eu cupidatat sint. Ex culpa quis veniam laboris aliquip nulla fugiat ipsum magna ipsum consequat qui magna consequat. Sit anim anim minim cillum reprehenderit reprehenderit aliquip quis duis consequat. Reprehenderit mollit officia magna duis aute aute est exercitation. Occaecat pariatur ipsum amet reprehenderit quis voluptate ipsum consequat culpa. Est qui adipisicing reprehenderit et sit voluptate sit excepteur Lorem ea proident.\r\n",
+    "registered": "2016-10-25T10:00:46 +04:00",
+    "latitude": 88.150659,
+    "longitude": 81.542784,
+    "tags": [
+      "dolore",
+      "in",
+      "cupidatat",
+      "proident",
+      "laborum",
+      "dolor",
+      "cupidatat"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Lynch Farmer"
+      },
+      {
+        "id": 1,
+        "name": "Washington Green"
+      },
+      {
+        "id": 2,
+        "name": "Hayes Berg"
+      }
+    ],
+    "greeting": "Hello, Maria Wright! You have 9 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "6616cc7635efa5ac469daf30",
+    "index": 3,
+    "guid": "62b99fab-3c1c-4a2f-a7b3-1377a81672cf",
+    "isActive": false,
+    "balance": "$3,737.21",
+    "picture": "http://placehold.it/32x32",
+    "age": 30,
+    "eyeColor": "blue",
+    "name": "Quinn Huff",
+    "gender": "male",
+    "company": "ZYTRAX",
+    "email": "quinnhuff@zytrax.com",
+    "phone": "+1 (931) 522-3363",
+    "address": "663 Montauk Court, Germanton, Arizona, 5422",
+    "about": "Non est culpa enim cillum culpa aliquip excepteur. Duis incididunt deserunt nostrud est incididunt voluptate irure amet occaecat nisi esse ea elit dolore. Dolor deserunt eu minim minim. Eu non fugiat magna velit ad nulla eu do esse. Et incididunt ad laboris veniam duis nostrud adipisicing. Ea adipisicing tempor qui sunt ullamco amet ex id ea reprehenderit sit reprehenderit velit non. Enim minim aute ipsum est ipsum ea non eu labore cupidatat.\r\n",
+    "registered": "2023-12-17T06:40:37 +05:00",
+    "latitude": -57.50384,
+    "longitude": 92.363824,
+    "tags": [
+      "fugiat",
+      "nulla",
+      "eu",
+      "veniam",
+      "sit",
+      "enim",
+      "dolor"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Christian Compton"
+      },
+      {
+        "id": 1,
+        "name": "Winifred Mckee"
+      },
+      {
+        "id": 2,
+        "name": "Blackburn Pittman"
+      }
+    ],
+    "greeting": "Hello, Quinn Huff! You have 5 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "6616cc7603f8220cc2d2d74c",
+    "index": 4,
+    "guid": "1702c834-51c2-431e-a626-ab3e810dbbaa",
+    "isActive": true,
+    "balance": "$1,591.45",
+    "picture": "http://placehold.it/32x32",
+    "age": 40,
+    "eyeColor": "brown",
+    "name": "Flynn Eaton",
+    "gender": "male",
+    "company": "ACLIMA",
+    "email": "flynneaton@aclima.com",
+    "phone": "+1 (814) 448-3310",
+    "address": "133 Conover Street, Sims, North Dakota, 6416",
+    "about": "Labore ipsum do minim est quis ea veniam sit exercitation exercitation non. Voluptate commodo pariatur enim do occaecat voluptate fugiat excepteur dolore eiusmod. Excepteur occaecat minim excepteur ad non duis non. Enim dolore veniam ea cupidatat in enim ipsum fugiat et excepteur ad nostrud reprehenderit laboris. Ullamco quis et incididunt dolore ipsum dolore ut occaecat occaecat. Eu ut eu dolor id veniam officia non laboris elit. Ipsum dolor proident ex nulla consequat et ipsum consequat non.\r\n",
+    "registered": "2021-05-26T09:34:20 +04:00",
+    "latitude": 58.275623,
+    "longitude": -88.546837,
+    "tags": [
+      "et",
+      "pariatur",
+      "magna",
+      "ad",
+      "eiusmod",
+      "pariatur",
+      "duis"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Bates Chandler"
+      },
+      {
+        "id": 1,
+        "name": "Roman Weber"
+      },
+      {
+        "id": 2,
+        "name": "Maryanne Juarez"
+      }
+    ],
+    "greeting": "Hello, Flynn Eaton! You have 1 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "6616cc76e09e60df0f028fac",
+    "index": 5,
+    "guid": "8d22ca10-d447-40d8-b190-f8b3cdbb73c5",
+    "isActive": true,
+    "balance": "$3,525.79",
+    "picture": "http://placehold.it/32x32",
+    "age": 22,
+    "eyeColor": "blue",
+    "name": "Belinda Cook",
+    "gender": "female",
+    "company": "AQUAZURE",
+    "email": "belindacook@aquazure.com",
+    "phone": "+1 (891) 492-3387",
+    "address": "381 Ridge Court, Valle, Mississippi, 278",
+    "about": "Incididunt occaecat laborum fugiat adipisicing adipisicing sint esse duis ipsum ut. Incididunt fugiat consequat voluptate est pariatur ea do enim eiusmod sint eiusmod minim velit sunt. Nostrud magna aliqua ut aute duis id velit minim minim id culpa.\r\n",
+    "registered": "2023-05-27T10:58:53 +04:00",
+    "latitude": -60.235465,
+    "longitude": -71.988236,
+    "tags": [
+      "nulla",
+      "incididunt",
+      "incididunt",
+      "laborum",
+      "in",
+      "veniam",
+      "laboris"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Wilson Workman"
+      },
+      {
+        "id": 1,
+        "name": "Cindy Sandoval"
+      },
+      {
+        "id": 2,
+        "name": "Lucile Fernandez"
+      }
+    ],
+    "greeting": "Hello, Belinda Cook! You have 5 unread messages.",
+    "favoriteFruit": "strawberry"
+  }
+]

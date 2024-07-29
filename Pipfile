@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "==2.24.0"
+redis = "*"
+boto3 = "*"
+gsutil = "*"
+uvicorn = "*"
+fastapi = "*"
+pydantic = "*"
+typing = "*"
+mysqlclient = "*"
+pipenv = "*"
+prettyprint = "*"
+dnspython = "*"
+pymongo = "==3.7.2"
+chalice = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

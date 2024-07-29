@@ -1,0 +1,272 @@
+[
+  {
+    "_id": "6616cc9dd2ebf4a176d722f4",
+    "index": 0,
+    "guid": "536d82ae-d293-41a3-ae6c-b9ee78c5b423",
+    "isActive": true,
+    "balance": "$3,793.78",
+    "picture": "http://placehold.it/32x32",
+    "age": 25,
+    "eyeColor": "green",
+    "name": "Maura Bruce",
+    "gender": "female",
+    "company": "TECHTRIX",
+    "email": "maurabruce@techtrix.com",
+    "phone": "+1 (911) 537-2666",
+    "address": "580 Claver Place, Ticonderoga, Rhode Island, 3962",
+    "about": "Commodo Lorem proident ea sint. Exercitation ut Lorem nisi ad. Ut aliquip ad amet adipisicing et cillum do ad cillum excepteur dolor Lorem. Magna non excepteur ex ipsum aliquip ea officia culpa. Nisi sit anim ipsum voluptate officia enim.\r\n",
+    "registered": "2022-02-16T04:13:56 +05:00",
+    "latitude": -5.643949,
+    "longitude": 24.43712,
+    "tags": [
+      "deserunt",
+      "magna",
+      "incididunt",
+      "nisi",
+      "veniam",
+      "Lorem",
+      "nulla"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Paulette Sellers"
+      },
+      {
+        "id": 1,
+        "name": "Chasity Dawson"
+      },
+      {
+        "id": 2,
+        "name": "Day Crane"
+      }
+    ],
+    "greeting": "Hello, Maura Bruce! You have 7 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "6616cc9d929dab1c39e844af",
+    "index": 1,
+    "guid": "72787bb6-bd27-4b6d-bca3-2e3965eeb4f2",
+    "isActive": true,
+    "balance": "$3,508.87",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "green",
+    "name": "Guerrero Dale",
+    "gender": "male",
+    "company": "ACCIDENCY",
+    "email": "guerrerodale@accidency.com",
+    "phone": "+1 (913) 599-2377",
+    "address": "686 Court Square, Beaverdale, Montana, 3217",
+    "about": "Cupidatat esse labore elit dolore aliqua labore amet est reprehenderit. Qui cupidatat et commodo ea consectetur fugiat enim esse veniam sunt aliquip. Excepteur laboris veniam laborum proident amet adipisicing. In consectetur aliquip aliqua Lorem. Ut cupidatat adipisicing deserunt aliquip commodo eu proident occaecat Lorem anim aliquip.\r\n",
+    "registered": "2015-06-17T01:01:50 +04:00",
+    "latitude": 5.584931,
+    "longitude": 163.660599,
+    "tags": [
+      "pariatur",
+      "sit",
+      "laboris",
+      "exercitation",
+      "ipsum",
+      "tempor",
+      "est"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Pierce Rice"
+      },
+      {
+        "id": 1,
+        "name": "Ford Schroeder"
+      },
+      {
+        "id": 2,
+        "name": "David Vinson"
+      }
+    ],
+    "greeting": "Hello, Guerrero Dale! You have 7 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "6616cc9d3f2c9ded2bcc7580",
+    "index": 2,
+    "guid": "1141bacd-1d9f-4123-819b-defa885f09c2",
+    "isActive": true,
+    "balance": "$1,538.46",
+    "picture": "http://placehold.it/32x32",
+    "age": 39,
+    "eyeColor": "blue",
+    "name": "Lola Carson",
+    "gender": "female",
+    "company": "AQUASURE",
+    "email": "lolacarson@aquasure.com",
+    "phone": "+1 (877) 452-2236",
+    "address": "763 Hicks Street, Movico, Virginia, 3818",
+    "about": "Aute aliquip laborum occaecat sint ex nisi veniam. Excepteur nulla ullamco ut occaecat enim sint excepteur aute minim. Irure aliquip anim esse elit. Non pariatur ullamco ut excepteur aliquip magna minim aliquip id voluptate ad duis. Anim sunt nulla anim ex magna velit mollit sit deserunt voluptate ut sunt.\r\n",
+    "registered": "2023-09-13T12:50:13 +04:00",
+    "latitude": 38.997187,
+    "longitude": -13.994643,
+    "tags": [
+      "do",
+      "laborum",
+      "do",
+      "non",
+      "sint",
+      "eiusmod",
+      "id"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Cristina Bailey"
+      },
+      {
+        "id": 1,
+        "name": "Murphy Rocha"
+      },
+      {
+        "id": 2,
+        "name": "Elliott Raymond"
+      }
+    ],
+    "greeting": "Hello, Lola Carson! You have 9 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "6616cc9d4477f4ca474d6519",
+    "index": 3,
+    "guid": "ab44b6c1-e3da-4caf-9da9-9d2716b21ce3",
+    "isActive": false,
+    "balance": "$3,337.73",
+    "picture": "http://placehold.it/32x32",
+    "age": 21,
+    "eyeColor": "brown",
+    "name": "Callahan Kline",
+    "gender": "male",
+    "company": "SPLINX",
+    "email": "callahankline@splinx.com",
+    "phone": "+1 (872) 457-2869",
+    "address": "751 Lawrence Avenue, Dalton, North Carolina, 4843",
+    "about": "Sunt ea non consectetur aliqua nulla eu pariatur ut. Nostrud qui pariatur ea nulla adipisicing tempor esse. Irure laboris sunt nulla irure do fugiat est excepteur aliqua laborum exercitation. Amet veniam sit exercitation amet.\r\n",
+    "registered": "2019-01-05T11:23:16 +05:00",
+    "latitude": 48.16957,
+    "longitude": -47.571664,
+    "tags": [
+      "velit",
+      "incididunt",
+      "labore",
+      "proident",
+      "officia",
+      "nulla",
+      "est"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Latisha Mcknight"
+      },
+      {
+        "id": 1,
+        "name": "Vicky Bender"
+      },
+      {
+        "id": 2,
+        "name": "Yates Rosales"
+      }
+    ],
+    "greeting": "Hello, Callahan Kline! You have 8 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "6616cc9df84ac9b0b70ed439",
+    "index": 4,
+    "guid": "ab3475af-fa75-4e20-b0e3-9b423dffe32d",
+    "isActive": true,
+    "balance": "$1,793.63",
+    "picture": "http://placehold.it/32x32",
+    "age": 25,
+    "eyeColor": "brown",
+    "name": "Hancock Potter",
+    "gender": "male",
+    "company": "PIVITOL",
+    "email": "hancockpotter@pivitol.com",
+    "phone": "+1 (984) 403-3830",
+    "address": "373 Tehama Street, Zortman, Texas, 6668",
+    "about": "Pariatur aliqua anim ut veniam. Aliqua sint et nostrud et officia. Ipsum nostrud nisi id nisi. Aute adipisicing aute tempor et fugiat nisi elit est.\r\n",
+    "registered": "2018-05-04T05:29:43 +04:00",
+    "latitude": 8.062645,
+    "longitude": -28.984915,
+    "tags": [
+      "nisi",
+      "labore",
+      "cillum",
+      "enim",
+      "ea",
+      "labore",
+      "minim"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Hewitt Summers"
+      },
+      {
+        "id": 1,
+        "name": "Cooper Wilder"
+      },
+      {
+        "id": 2,
+        "name": "Maryann Leach"
+      }
+    ],
+    "greeting": "Hello, Hancock Potter! You have 2 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "6616cc9dfa191cdd40cea884",
+    "index": 5,
+    "guid": "5e818d3d-92df-43e0-8797-9fa263ada6ab",
+    "isActive": false,
+    "balance": "$1,545.62",
+    "picture": "http://placehold.it/32x32",
+    "age": 37,
+    "eyeColor": "blue",
+    "name": "Patterson Dalton",
+    "gender": "male",
+    "company": "SONIQUE",
+    "email": "pattersondalton@sonique.com",
+    "phone": "+1 (827) 497-2534",
+    "address": "128 Morton Street, Disautel, Palau, 5169",
+    "about": "Amet mollit minim irure elit eiusmod. Do laborum dolore officia non est quis sit ut aute officia voluptate aute. Amet veniam Lorem ea officia esse ea nostrud ad labore consequat enim.\r\n",
+    "registered": "2018-05-23T03:18:56 +04:00",
+    "latitude": 67.723608,
+    "longitude": -40.717439,
+    "tags": [
+      "officia",
+      "aliquip",
+      "reprehenderit",
+      "quis",
+      "sint",
+      "labore",
+      "cillum"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Helga Jacobson"
+      },
+      {
+        "id": 1,
+        "name": "Gail Petersen"
+      },
+      {
+        "id": 2,
+        "name": "Natalia Tucker"
+      }
+    ],
+    "greeting": "Hello, Patterson Dalton! You have 9 unread messages.",
+    "favoriteFruit": "apple"
+  }
+]
