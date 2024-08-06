@@ -19,27 +19,23 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	// "runArgs": ["--env-file",".devcontainer/devcontainer.env"],
-	"mounts": [ 
-		"source=/Users/nmagee/.aws,target=/root/.aws,type=bind",
-		"source=/Users/nmagee/.ssh,target=/root/.ssh,type=bind"
-	],
+	// "mounts": [ 
+	// 	"source=/Users/nmagee/.aws,target=/root/.aws,type=bind",
+	// 	"source=/Users/nmagee/.ssh,target=/root/.ssh,type=bind"
+	// ],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [8000, 8080],
+	"forwardPorts": [8000],
 
 	"containerEnv": {
     	"MY_CONTAINER_VAR": "some-value-here",
-    	"TWILIO_AUTH_TOKEN": "${localEnv:TWILIO_AUTH_TOKEN}"
+    	"TWILIO_AUTH_TOKEN": "${localEnv:TWILIO_AUTH_TOKEN}",
+		"GITHUB_TOKEN": "$(localEnv:GITHUB_TOKEN)""
 	},
 
 	// Uncomment the next line to run commands after the container is created - for example installing curl.
 	"postCreateCommand": "pip install -r /root/requirements.txt"
 
-	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
-	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
-
 	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
 
-	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "vscode"
 }
