@@ -1,8 +1,8 @@
 # image: ghcr.io/ds3002/course:latest
 
-tasks:
-  - command: sudo apt install -y mysql-client
-  - command: pip install mysqlclient
+# tasks:
+#   - command: sudo apt install -y mysql-client
+#   - command: pip install mysqlclient
 
 # github:
 #   prebuilds:
