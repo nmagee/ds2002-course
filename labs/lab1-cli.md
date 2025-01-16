@@ -1,6 +1,7 @@
 # Lab 1: The Command Line
 
 Follow all the steps below for practice with the command line. At the bottom are instructions for commands you should write for each prompt, saved to a text file you create using the command line. Upload that file to the Lab assignment page for grading.
+
 You can use the <a href="https://github.com/codespaces/" target="_new"><b>GitHub Codespaces</b></a> for these exercises. Open that page and click on "New Codespace" and select a repository.
 
 > **Advanced Users** - For an additional challenge, complete these exercises on your local laptop using either the MacOS Terminal (Mac) or WSL Terminal (Windows).
@@ -51,7 +52,7 @@ Note that the `-al` flags (or options) do not have to be in any particular order
 ls -la
 ```
 
-1. Create two empty files by using the `touch` command
+4. Create two empty files by using the `touch` command
 
 ```
 touch file1
@@ -66,13 +67,19 @@ Next, try creating two more files within the same command:
 touch file3 file4
 ```
 
-2. You can create multiple files with a single command in `bash`. This command will create 10 new files with unique numeric names:
+5. You can create multiple files with a single command in `bash`. This command will create 10 new files with unique numeric names:
 
 ```
 touch file-{11..20}.txt
 ```
 
-3. Add text contents to a file. You can use `echo` to pass some data into a file like this:
+You can even create numerous files based on a specific interval. This command creates files from 2 to 20 using only even numbers in the filenames:
+
+```
+for i in {02..20..2}; do touch file$i; done
+```
+
+6. Add text contents to a file. You can use `echo` to pass some data into a file like this:
 
 ```
 echo "Hi there everybody, my name is <YOUR NAME>" > file1
@@ -625,7 +632,7 @@ Connect using the password given to you in the Canvas instructions for this lab.
 
 ## Your Turn
 
-Now complete the following steps on your own. Save the commands necessary to complete these steps in a single text file. This should contain 10 lines of commands (based on these 10 prompts). Copy and paste those lines to the Lab 1 assignment in Canvas.
+Now complete the following steps on your own. Save the commands necessary to complete these steps in a single text file as you do your work. This should contain 10 lines of commands (based on these 10 prompts). BE SURE TO NUMBER each command, or use comments in the code. Copy and paste those lines to a [**GitHub Gist**](https://gist.github.com/) and save it as a private gist. Paste your GitHub Gist URL in the Lab 1 assignment in Canvas.
 
 1. Using the terminal change directories to your home directory. 
 
@@ -637,7 +644,7 @@ Now complete the following steps on your own. Save the commands necessary to com
 
 5. Now append your name to an additional line in that file by using the `echo` command.
 
-6. Touch 50 files whose names contain the numbers 100 to 150. (i.e. file100.txt, file101.txt, etc. as you choose.)
+6. Touch 25 files whose names contain the numbers 101 to 200 counting by 4. (i.e. `file101.txt`, `file105.txt`, `file109.txt`, etc. as you choose.)
 
 7. Touch another file within that directory named `bash_history`.
 
