@@ -4,7 +4,7 @@ Follow all the steps below for practice with the command line. At the bottom are
 
 You can use the <a href="https://github.com/codespaces/" target="_new"><b>GitHub Codespaces</b></a> for these exercises. Open that page and click on "New Codespace" and select a repository.
 
-> **Advanced Users** - For an additional challenge, complete these exercises on your local laptop using either the MacOS Terminal (Mac) or WSL Terminal (Windows).
+> **Advanced Users** - For an additional challenge, complete these exercises on your local laptop using either the MacOS Terminal (Mac) or WSL Terminal (Windows). You may need to modify some commands accordingly.
 
 ## Getting Oriented to your Home Directory
 
@@ -653,3 +653,5 @@ Now complete the following steps on your own. Save the commands necessary to com
 9. Show the command to either tar or zip the "development" subdirectory with all files inside of it, *including* the directory itself.
 
 10. Write a line of code that exports a `FAVORITE_FLAVOR` environment variable, with a corresponding value (vanilla, caramel, salty, chocolate, etc.) into your `~/.bashrc` file.
+
+Also be sure to indicate which environment you used to complete these steps: GitHub Codespaces, MacOS, Windows WSL, etc.
