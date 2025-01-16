@@ -1,7 +1,9 @@
 # Lab 1: The Command Line
 
 Follow all the steps below for practice with the command line. At the bottom are instructions for commands you should write for each prompt, saved to a text file you create using the command line. Upload that file to the Lab assignment page for grading.
-You can use the <a href="https://cloud.google.com/shell" target="_new"><b>Google Shell</b></a> for these exercises. Open that page and click on "Go To Console".
+You can use the <a href="https://github.com/codespaces/" target="_new"><b>GitHub Codespaces</b></a> for these exercises. Open that page and click on "New Codespace" and select a repository.
+
+> **Advanced Users** - For an additional challenge, complete these exercises on your local laptop using either the MacOS Terminal (Mac) or WSL Terminal (Windows).
 
 ## Getting Oriented to your Home Directory
 
@@ -9,6 +11,12 @@ You can use the <a href="https://cloud.google.com/shell" target="_new"><b>Google
 
 ```
 cd ~
+```
+
+Another way to get there is to use the environment variable `$HOME`:
+
+```
+cd $HOME
 ```
 
 2. Learn the location of your home directory by issuing the `pwd` command. `pwd` is short for "present working directory". 
@@ -23,7 +31,7 @@ pwd
 ls
 ```
 
-Next try listing the contents in a more detailed view
+Next list the contents in a more detailed view
 
 ```
 ls -l
@@ -43,7 +51,7 @@ Note that the `-al` flags (or options) do not have to be in any particular order
 ls -la
 ```
 
-5. Create two empty files by using the `touch` command
+1. Create two empty files by using the `touch` command
 
 ```
 touch file1
@@ -58,23 +66,26 @@ Next, try creating two more files within the same command:
 touch file3 file4
 ```
 
-6. Add text contents to a file. You can use `echo` to pass some data into a file like this:
+2. You can create multiple files with a single command in `bash`. This command will create 10 new files with unique numeric names:
+
+```
+touch file-{11..20}.txt
+```
+
+3. Add text contents to a file. You can use `echo` to pass some data into a file like this:
 
 ```
 echo "Hi there everybody, my name is <YOUR NAME>" > file1
 ```
 
-This command uses a "redirect" to take the `echo` command and push it into `file1`.
-You could acually just `echo` out anything you want, at any time, but it only prints
-to the screen and isn't recorded anywhere. Try it for yourself:
+This command uses a "redirect" to take the `echo` command and push it into `file1`. You could acually just `echo` out anything you want, at any time, but it only prints to the screen and isn't recorded anywhere. Try it for yourself:
 
 ```
 echo "Today is Friday"
 echo "A man a plan a canal Panama"
 ```
 
-7. View the contents of your file using `cat`. `cat` is short for concatenate, since it can
-easily join files together, but it's often used simply for reading out the contents of a single
+7. View the contents of your file using `cat`. `cat` is short for concatenate, since it can easily join files together, but it's often used simply for reading out the contents of a single
 file.
 
 ```
@@ -155,12 +166,35 @@ it and then issue the `pwd` command to find out.
 mv mynewdir another-newdir
 ```
 
-4. To delete a directory, use the `rm` command with the `-R` (Recursive) option. Recursive
-means you want to delete the directory AND anything within it.
+4. To delete a directory, use the `rm` command with the `-r` (Recursive) option. Recursive means you want to delete the directory AND anything within it.
 
 ```
-rm -R another-newdir
+rm -r another-newdir
 ```
+
+5. You can delete multiple objects with a filter in your command. For instance, run this command in a directory:
+```
+touch z{81..90}.txt
+```
+
+You could delete ALL text files in the directory with:
+
+```
+rm *.txt
+```
+
+You could delete all `.txt` files that contain the number `8` in them with this:
+
+```
+rm *8*.txt
+```
+
+You could delete all files that begin with `z` with this:
+
+```
+rm z*
+```
+
 
 ## Working with Text Files
 
@@ -171,10 +205,7 @@ simply invoke the `nano` program:
 nano
 ```
 
-Within the page you see blank space where you will write contents, and a series of possible
-commands at the bottom marked with the `^` character. This stands for the CONTROL key. If you
-open a blank document, try writing several lines of text, complete with paragraph breaks and 
-punctuation. When you're done, press `^X` to exit. Upper/lower case does not matter.
+Within the page you see blank space where you will write contents, and a series of possible commands at the bottom marked with the `^` character. This stands for the CONTROL key. If you open a blank document, try writing several lines of text, complete with paragraph breaks and punctuation. When you're done, press `^X` to exit. Upper/lower case does not matter.
 
 This will give you the following prompt:
 
@@ -241,17 +272,16 @@ For a word count only, use `-w`
 cat hello | wc -w
 ```
 
-5. Copying files or directories. If you have a file or folder you would like to copy, use the `cp`
-command like this:
+5. Copy a file or directory. If you have a file or folder you would like to copy, use the `cp` command like this:
 
 For a file:
 ```
 cp file1 file2
 ```
 
-For a directory:
+For a directory we need the `-r` flag to indicate a recursive copy:
 ```
-cp -R dir1 dir2
+cp -r dir1 dir2
 ```
 
 Notice it is a good practice to leave the trailing `/` off of directory names.
@@ -283,15 +313,13 @@ cat mobydick.txt | grep "Captain" | wc -l
 
 How many lines contain "Captain" in this text?
 
-3. What if we wanted to search across many files for a word? `grep` is still useful here.
-Issue this command from within your home directory:
+3. What if we wanted to search across many files for a word? `grep` is still useful here. Issue this command from within your home directory:
 
 ```
 grep -r "Captain"
 ```
 
-The output will contain both the file name where the search term appears and the relevant
-line itself
+The output will contain both the file name where the search term appears and the relevant line itself
 
 ```
 ./mobydick.txt:person, yet for Captain Ahab to have a boat actually 
@@ -301,7 +329,9 @@ line itself
 ./mobydick.txt:Captain Colnett, a post-captain in the English navy, 
 ```
 
-4. Finding files by file name. Use the `find` command for this. The syntax is:
+(Notice that `grep` is case-sensitive, so searching for `captain` will give different results.)
+
+4. Find files by file name. Use the `find` command for this. The syntax is:
 
 ```
 find . -name "mobydick.txt"
@@ -316,7 +346,7 @@ To search across all home directories, for example, you would change the path op
 find /home -name "filename.txt"
 ```
 
-5. Finding files matching a pattern
+5. Find files matching a pattern
 
 Use the wildcard `*` character at the beginning, middle, or end of a term to extend
 matching. For example, if you only knew that `moby` was in the name of the file and
@@ -350,14 +380,14 @@ rm -R '*zero*'
 
 ## File Permissions
 
-1. Touch a file named `permissiontest` and echo some content into it. 
+1. Touch a file named `permission_test` and echo some content into it. 
 
 2. Next use `ls -al` to see it listed in your directory.
 
 3. Now change its permissions to `000` like this:
 
 ```
-chmod 000
+chmod 000 permission_test
 ```
 
 Try to `cat` the contents of the file. You should get a permission denied message.
@@ -365,7 +395,7 @@ Try to `cat` the contents of the file. You should get a permission denied messag
 4. Now change its permissions so that only you can read and write the file:
 
 ```
-chmod 600
+chmod 600 permission_test
 ```
 
 Again, `ls` the directory so you can see the permission bits for the file.
@@ -374,10 +404,26 @@ Again, `ls` the directory so you can see the permission bits for the file.
 we already gave you:
 
 ```
-chmod 640
+chmod 640 permission_test
 ```
 
 List the directory contents once more and notice the permission bits for the file.
+
+Notice the full set of characters in the far left column:
+
+```
+-rw-r-----   1 nmagee  staff     0B Jan 16 09:27 permission_test
+```
+
+The first character represents what type of object it is, i.e. file (`-`), directory (`d`), link (`s`), etc.
+
+The next 9 characters represent permissions for the USER (i.e. the owner), GROUP, and OTHER machine users.
+
+Each of those entities can have any combination of `rwx` permissions, which stands for READ, WRITE, and EXECUTE. This applies both to files and directories.
+
+So to see `rwxrwxrwx` means the user, group, and other users all have full permissions to read, write, and execute the file/folder. [**Read more here**](https://www.redhat.com/en/blog/linux-file-permissions-explained) about POSIX permissions.
+
+As practice, you should now determine what command is required to allow the USER and GROUP read/write permissions to a file, but no access to OTHER users.
 
 
 ## Utility Commands
@@ -439,8 +485,7 @@ quite simple:
 unzip archive.zip
 ```
 
-To create a tarball (the common nickname for a tar compressed archive) we often use it in conjunction
-with the `gzip` and `gunzip` options to keep the archive as small as possible. Again assuming we have two files in the current directory named `file1` and `file2` we want to put in the bundle:
+To create a tarball (the common nickname for a tar compressed archive) we often use it in conjunction with the `gzip` and `gunzip` options to keep the archive as small as possible. Again assuming we have two files in the current directory named `file1` and `file2` we want to put in the bundle:
 
 ```
 tar -czvf archive.tar.gz file1 file2
@@ -454,7 +499,6 @@ To decompress the same archive:
 ```
 tar -xzvf archive.tar.gz
 ```
-
 The only difference in options is the use of `-x` which means "expand"
 
 NOTE: It's extremely useful to know that in the world of the command line you can always
@@ -471,13 +515,119 @@ be changed in your `.bashrc` file.
 When viewing your history, notice the line number with each command. To repeat an item
 in your history, prefix that number with `!`.
 
+## Environment `env` variables
+
+To view your system `env` variables, issue that command:
+
+```
+env
+```
+
+Take a moment to look through them. These are set by the system for each interactive user session. Some variables are common no matter what system you are on, such as: `HOME`, `USER` (or `USERNAME`), `EDITOR`, `PWD`, or `SHELL`.
+
+Each environment variable is made of a `KEY` and a `VALUE`. You can fetch any value by calling it by key name:
+
+```
+echo $HOME
+```
+
+You can also set your own `env` variables. To do this temporarily within your current session:
+
+```
+FNAME="Waldo"
+```
+
+You can now retrieve that value interactively from your current `bash` session. However, if you had software running it would be unable to find this variable.
+
+To make an `env` variable available to other processes, it must be exported. This is how you export:
+
+```
+export FNAME="Waldo"
+```
+
+This way some code or a script that is running outside of your current session can fetch `$FNAME`.
+
+However, if you were to restart the computer, this `env` variable would not persist. It would be erased upon reboot.
+
+To make an environment variable persist in your account, you can store it in a text file.
+
+For your user account, assuming that `bash` is your default shell, you can edit a hidden file in your home directory, `.bashrc` and insert the same export command:
+
+```
+export FNAME="Waldo"
+```
+Upon your next login, that variable will be available.
+
+If you can become `root` or use the `sudo` command, there is also a system-wide file for these exports. Simply insert your KEY=VALUE environment variable there (no `export` needed). That file can be found at:
+
+```
+/etc/environment
+```
+
+## Networking / Internet
+
+The Linux OS has several built-in tools for helping check networking, or interacting with remote resources on the Internet.
+
+### `ping`
+
+`ping` is a simple tool that, like its submarine counterpart, simply bounces a message off of a remote host and tells you if it is reachable:
+
+```
+$ ping google.com
+PING google.com (142.251.167.138): 56 data bytes
+64 bytes from 142.251.167.138: icmp_seq=0 ttl=57 time=6.479 ms
+64 bytes from 142.251.167.138: icmp_seq=1 ttl=57 time=4.430 ms
+64 bytes from 142.251.167.138: icmp_seq=2 ttl=57 time=4.407 ms
+64 bytes from 142.251.167.138: icmp_seq=3 ttl=57 time=4.518 ms
+```
+
+Press Ctrl+C to stop the `ping`s. Be aware that `ping` just verified two things for us:
+
+1. The host `google.com` is alive and well; and
+2. Our current host has an active Internet connection.
+
+### `curl`
+
+`curl` is a basic tool for fetching something from the Internet - a file, web page, zip or tar bundle, CSV or JSON datafile, etc. You used `curl` above to fetch the Moby Dick text. Try it yourself with this list of songs:
+
+```
+curl http://nem2p-dp1-api.pods.uvarc.io/songs
+```
+
+By default, `curl` displays the contents of what was retrieved. In the case above, you can see the JSON values of a song list. If you wanted to "capture" the data file, you could redirect this command to a file, or use the `-O` flag (Oh, not zero) to save the file.
+
+Note that you cannot use `curl` to fetch password-restricted resources (i.e. from Canvas, or Gmail, etc.)
+
+Another useful trick with `curl` is to find your public IP address:
+
+```
+$ curl ifconfig.me
+199.111.240.7
+```
+
+### `ssh`
+
+`ssh` is the Secure Shell, a method for making secure connections into the terminal of another computer. This might be a computing instance running in the cloud, a supercomputer, or another machine.
+
+SSH connections look very similar to email addresses, in the form of USER @ HOST. (This is no coincidence since email and shell connections are very early Internet tools.)
+
+Try a connection using a password:
+
+```
+ssh ds2002@34.201.203.207
+```
+Connect using the password given to you in the Canvas instructions for this lab.
+
+1. Within the home directory of this shared user account, create a subdirectory named from your UVA computing ID, i.e. `mst3k`. Create a `REAMDE.md` file within that folder that includes your full name.
+2. Check the login status of other users with the command `last -i`.
+3. View the `history` of this account. Since all students are sharing a single account name, you'll see the history of other students included.
+4. To leave the SSH session, type `exit`.
+
 ## Your Turn
 
-Complete the following steps on your own. Save the commands necessary to complete these
-steps in a single text file. This should contain 7 lines of commands (along with these 7 prompts). Copy and paste those lines
-to the Lab 1 assignment in Canvas.
+Now complete the following steps on your own. Save the commands necessary to complete these steps in a single text file. This should contain 10 lines of commands (based on these 10 prompts). Copy and paste those lines to the Lab 1 assignment in Canvas.
 
-1. Using terminal and/or git-bash on your local computer, change directories to your home directory. 
+1. Using the terminal change directories to your home directory. 
 
 2. Create a "development" subdirectory within your home directory.
 
@@ -485,8 +635,14 @@ to the Lab 1 assignment in Canvas.
 
 4. Echo the name "DS2002" and redirect it into that file.
 
-5. Touch another file within that directory named "bash_history".
+5. Now append your name to an additional line in that file by using the `echo` command.
 
-6. Use the redirect character to pass your bash history into that file.
+6. Touch 50 files whose names contain the numbers 100 to 150. (i.e. file100.txt, file101.txt, etc. as you choose.)
 
-7. Either tar or zip the "development" subdirectory with both files inside of it.
+7. Touch another file within that directory named `bash_history`.
+
+8. Use the redirect character to pass your bash history into the `bash_history` file.
+
+9. Show the command to either tar or zip the "development" subdirectory with all files inside of it, *including* the directory itself.
+
+10. Write a line of code that exports a `FAVORITE_FLAVOR` environment variable, with a corresponding value (vanilla, caramel, salty, chocolate, etc.) into your `~/.bashrc` file.
