@@ -1,6 +1,6 @@
 # Lab 1: The Command Line
 
-Follow all the steps below for practice with the command line. At the bottom are instructions for commands you should write for each prompt, saved to a text file you create using the command line. Upload that file to the Lab assignment page for grading.
+Follow all the steps below for practice with the command line. At the bottom are instructions for commands you should write for each prompt, saved to a GitHub Gist you create amd save. Copy amd Paste the Gist URL to the Lab assignment page for grading.
 
 You can use the <a href="https://github.com/codespaces/" target="_new"><b>GitHub Codespaces</b></a> for these exercises. Open that page and click on "New Codespace" and select a repository.
 
