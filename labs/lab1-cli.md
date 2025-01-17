@@ -6,6 +6,15 @@ You can use the <a href="https://github.com/codespaces/" target="_new"><b>GitHub
 
 > **Advanced Users** - For an additional challenge, complete these exercises on your local laptop using either the MacOS Terminal (Mac) or WSL Terminal (Windows). You may need to modify some commands accordingly.
 
+
+## Finding Help
+
+A few places you can find explanations and examples for various commands:
+
+1. Use the `man` tool in the terminal! For instance, to learn about `cp` and all of its features, options, etc. type `man cp` and read the documentation. Use the up and down arrows to navigate, then press `Q` to return to the prompt.
+2. Look at **Linux in a Nutshell** or the **Linux Pocket Guide** in Canvas Module 1. They include all the details!
+   
+
 ## Getting Oriented to your Home Directory
 
 1. Change directories to your home directory by issuing the `cd ~` command. `cd` is short for "change directory". This is a shortcut to your home directory.
