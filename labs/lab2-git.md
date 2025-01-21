@@ -6,7 +6,7 @@ Create a single GitHub Gist to submit the URLs you create in these steps, and su
 
 ## 1. Git/GitHub Basics
 
-Go to https://uvads.github.io/git-basics/ and work through Steps 0, 1, and 2. When setting up `git` CLI authentication, I strongly suggest SSH key authentication. However, if you already have this set up, you do not need to change.
+Go to https://uvads.github.io/git-basics/ and work through pages 0, 1, and 2. When setting up `git` CLI authentication, I strongly suggest SSH key authentication. However, if you already have this set up, you do not need to change.
 
 To test your understanding, be sure you understand how to do the following well:
 
