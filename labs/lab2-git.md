@@ -52,7 +52,6 @@ Add the URL to your GitHub Profile page to the GitHub Gist.
     - Hometown: 
     - Hobbies: 
     - First Computer I Ever Touched: 
-    - About me:
     - My GitHub Profile: <Insert the full URL to the README page you set up in Step 3>
     ```
     
