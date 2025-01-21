@@ -28,7 +28,7 @@ To test your understanding, be sure you understand how to do the following well:
 6. Once that is complete, wait about 20 seconds and refresh the page in your copy of the lesson.
 7. Follow the instructions to complete the lesson.
 
-Add the URLs to the new repository you created in this step to the GitHub Gist.
+Add the URL to the new repository you created in this step to the GitHub Gist.
 
 ## 3. Set up your GitHub Profile README Page
 
