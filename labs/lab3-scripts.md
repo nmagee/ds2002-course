@@ -1,33 +1,84 @@
-# Lab 3: Scripting
+# Lab 3: Basic Scripting
 
-Follow all the steps below for practice with writing scripts. There are two scripts you will develop in this lab. Commit both to your forked copy of the course repository, and paste both URLs into the answer for submission.
+Follow the steps below for practice with writing scripts. There are two scripts you will develop in this lab - one in `bash` and one in `python3`. Commit both to your `ds2002-scripts` repository and submit the URL to your repo for grading.
 
+## 3. Use Python to fetch remote data
 
-## `bash` Mad-Lib
+For this script you will need Python3 installed on your local system.
 
-1. Create a new file `madlib.sh` and edit it using `nano`:
+Python3 should be available in your path. Use `which python3` to find the path. That path should be something like `/usr/bin/python3`
 
-2. Add a "shebang" line to the first line of your file.
+You will also need to install the `requests` library for Python. To do this, run this command:
 
-3. Two lines lower, clear the screen and add an introduction to the user:
+```
+python3 -m pip install requests
 
-```bash
-clear
-echo "Let's build a mad-lib!"
+# or
+
+pip install requests
 ```
 
-4. Next, start the logic of your script. Use the format below for collecting at least eight (8) variables. Each should have a different prompt and a different variable name. You may want to use ALL CAPS for variables simply for visibility while programming:
+1. Create a new script called `github-events.py` and open it in an editor.
 
-```bash
-read -p "1. Please give me an adjective: " ADJ1
-```
-5. Repeat the `read` lines to gather nouns, verbs, adjectives, adverbs totaling at least eight. (More are fine!)
+2. Put your Python3 path in a shebang line. Use the command below to find your `PATH` to python:
 
-6. Next, use one or more `echo` commands to tell a story using all the words you have collected. Think of this as a "Once upon a time ..." story, or a "And then ..." story. There are plenty of examples online. Your code should gather user input and then tell the story using those inputs.
+    ```
+    which python3
+    ```
 
-7. Save your file. `chmod` it appropriately and test it. Debug as needed.
+3. For this script you will need to set an environment variable in your `bash` shell. Edit your `~/.bashrc` file and export a new `var` named `GITHUB_USER`. Give it the value of your own GitHub username.
 
-8. The file you add, commit, and push should execute flawlessly. We will run your script and test it for accuracy.
+    ```
+    export GITHUB_USER="nmagee"
+    ```
+
+    After you add this line, run the command `source ~/.bashrc` to load this new value into your environment.
+   
+4.  Back to your Python script. In order to work with `env` variables and remote APIs you need three imports:
+
+    ```python3
+    import os
+    import json
+    import requests
+    ```
+    To retrieve the value of an environment variable in Python, use this syntax:
+
+    ```
+    GHUSER = os.getenv('GITHUB_USER')
+    ```
+
+    You can test that this works by using Python interactively. Load your imports and execute that line, and you should be able to `print(GHUSER)` to get your username.
+
+5. Next, we will use this variable to fetch the recent activity for this user account (you!) in GitHub. First let's configure the remote endpoint to get that information. The format for that API address is:
+
+    ```
+    https://api.github.com/users/USERNAME/events
+    ```
+
+    To dynamically insert your GITHUB_USER name into this URL, define a `url` variable like this:
+
+    ```
+    url = 'https://api.github.com/users/{0}/events'.format(GHUSER)
+    ```
+
+    You will know if this is formatted correctly if you `print(url)` within Python and see a well-formed address.
+
+6. Use this address to fetch your recent GitHub activity with the `requests` library. We will load the response back from the API into a variable, and loop through the first five responses:
+
+    ```
+    r = json.loads(requests.get(url).text)
+
+    for x in r[:5]:
+      event = x['type'] + ' :: ' + x['repo']['name']
+      print(event)
+    ```
+
+    Take a moment to `print(r)` and view all the results. You can also do this by opening the fully-formatted URL above in a web browser. Note the variety of data available around your work in GitHub. 
+
+    Much more information on the [**GitHub API is available**](https://docs.github.com/en/rest?apiVersion=2022-11-28). 
+
+7. Use `chmod` to make your script executable, and run it. Make sure no errors occur.
+   
 
 ## Python3 and `env` variables
 
@@ -88,6 +139,9 @@ print(os.getenv("ZIP"))
 
 7. Your script when run should prompt for three values, store three values as `env` variables, and print out those three `env` variables without errors.
 
-## Submitting your work
+## Submit your work
+
+You created three separate scripts for this lab. Add/commit/push them to your fork of the DS2022 repository, in a folder `my-work/lab3`. Submit the GitHub URL to that directory within Canvas.
+
 
 This lab has you create two scripts. They should be put into a folder `ds2002-course/mywork/lab3` within your fork of the course repository, added, committed, and pushed. Then send the two (2) URLs - one for each file - in the text box within Canvas.
