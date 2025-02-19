@@ -303,8 +303,44 @@ response = s3.generate_presigned_url(
 )
 ```
 
+### BONUS: Enable your Bucket as a Website
+
+As a web-enabled storage service, S3 buckets can also serve web content including entire websites. Look at https://www.rc.virginia.edu/ as an example. To configure a bucket into a website follow these steps:
+
+1. Create a new bucket (or follow the remaining steps to change an existing bucket). Make it a "General Purpose" bucket.
+2. For "Object Ownership" select "ACLs Enabled". Leave "Bucket Owner Preferred" ownership selected.
+3. Unselect the "Block All Public Access" box. You want to allow public access.
+4. Select the box acknowledging that you understand the impact of these new settings.
+5. Leave other settings as-is and create the bucket. Once created, click into the bucket name from the list of all buckets.
+6. Select the "Permissions" tab and scroll down to the Bucket Policy area. Edit the policy, inserting this IAM policy (be sure to change the bucket name to your bucket):
+
+    ```
+    {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
+        }
+      ]
+    }
+    ```
+
+7. Save your changes to the policy. Switch to the "Properties" tab for your bucket and scroll to the bottom.
+8. Edit the Static Website Hosting section. For the index document enter `index.html` and for the error document enter `error.html`
+9. Save your changes. The page will refresh and you will see a website URL appear, something like http://ds2002-mst3k.s3-website-us-east-1.amazonaws.com/
+10. To test your site, upload a sample HTML file named `index.html` to your bucket. Here is such a file: https://s3.amazonaws.com/ds2002-resources/labs/lab4/index.html
+
+    ```
+    curl https://s3.amazonaws.com/ds2002-resources/labs/lab4/index.html > index.html
+    aws s3 cp index.html s3://BUCKET-NAME/
+    ```
+11. Then visit the URL of your website-enabled bucket with a browser. The page should be visible.
+
 ## Submit your work
 
-Your scripts should be put into a folder `my-work/lab4` within your fork of the course repository -- added, committed, and pushed.
+Your scripts should be put into a folder `labs/lab4` within your repository -- added, committed, and pushed.
 
 Submit the GitHub URL to that folder into Canvas for lab completion credit.
