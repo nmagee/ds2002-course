@@ -41,7 +41,7 @@ AWS operates many `regions` of infrastructure around the world. We will be using
 https://s3.amazonaws.com/ + BUCKET_NAME + / file/path.sfx
 ```
 For example, this URL is to a publicly-accessible file within a publicly-accessible bucket:
-[`https://s3.amazonaws.com/ds2002-mst3k/vuelta.jpg`](https://s3.amazonaws.com/ds2002-mst3k/vuelta.jpg)
+[`https://s3.amazonaws.com/ds2002-resources/vuelta.jpg`](https://s3.amazonaws.com/ds2002-resources/vuelta.jpg)
 
 
 ## Create and Configure an S3 Bucket
