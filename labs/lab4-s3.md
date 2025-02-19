@@ -1,10 +1,8 @@
 # Lab 4: S3 Storage
 
-Follow all the steps below for practice working with the S3 service in Amazon Web Services. Among several other tasks you will write two scripts for this lab. Create a folder within `mywork/` named `lab4` and put your scripts into that directory. Commit these to your forked copy of the course repository, and paste the GitHub URL to the folder into the answer for submission.
+Follow all the steps below for practice working with the S3 service in Amazon Web Services. Among several other tasks you will write two scripts for this lab. Create a folder within `my-work/` named `lab4` and put your scripts into that directory. Commit these to your forked copy of the course repository, and paste the GitHub URL to the folder into the answer for submission.
 
-This lab requires that you have both the AWS CLI tool (with keys) and Python3 / `boto3` installed.
-- AWS Academy students can use the built-in web terminal, which has Python3, `boto3`, and the AWS CLI installed, or can set them up in their local environment. [Here is a video](https://www.youtube.com/watch?v=izkD2K83Dcs) that walks you through accessing the Learner Lab in AWS Academy.
-- BYO Account students will need Python3, `boto3`, and the AWS CLI installed and configured locally with security credentials. Here is a [video](https://www.youtube.com/watch?v=-UNmEC9OmR8) that walks you through setting up those keys.
+This lab requires that you have both the AWS CLI tool (with keys configured) and Python3 / `boto3` installed. Here is a [video](https://www.youtube.com/watch?v=Ug1KWMP6U1g&t=250s) that walks you through setting up those keys.
 
 Installations:
 - [Python3](https://www.python.org/downloads/)
@@ -38,21 +36,21 @@ AWS operates many `regions` of infrastructure around the world. We will be using
 https://s3.amazonaws.com/ + BUCKET_NAME + / file/path.sfx
 ```
 For example, this URL is to a publicly-accessible file within a publicly-accessible bucket:
-[`https://s3.amazonaws.com/ds2002-mst3k/vuelta.jpg`](https://s3.amazonaws.com/ds2002-mst3k/vuelta.jpg)
+[`https://s3.amazonaws.com/ds2022-mst3k/vuelta.jpg`](https://s3.amazonaws.com/ds2022-mst3k/vuelta.jpg)
 
 
 ## Create and Configure an S3 Bucket
 
-1. From either the Learner Lab terminal web page OR your local terminal, list any existing buckets (there should be none):
+1. From either the VS Code or your local terminal, list any existing buckets (there should be none):
 
     ```
     aws s3 ls
     ```
 
-2. Create a new bucket using the `mb` S3 subcommand. Add your computing ID to the name of the bucket, i.e. `ds2002-mst3k` and so on. Note the use of the `s3://` protocol before the bucket name.
+2. Create a new bucket using the `mb` S3 subcommand. Add your computing ID to the name of the bucket, i.e. `ds2022-mst3k` and so on. Note the use of the `s3://` protocol before the bucket name.
 
     ```
-    aws s3 mb s3://ds2002-mst3k
+    aws s3 mb s3://ds2022-mst3k
     ```
 
 3. Grab an image file. Using the `curl` command below you can retrieve any image from the Internet you want to use for this lab. Once you have the URL copied for the image, use this command syntax:
@@ -73,17 +71,17 @@ For example, this URL is to a publicly-accessible file within a publicly-accessi
     For example, to upload the google logo:
 
     ```
-    aws s3 cp google_logo.png s3://ds2002-mst3k/
+    aws s3 cp google_logo.png s3://ds2022-mst3k/
     ```
 
 5. Go ahead and upload your file. List the contents of your bucket to verify it is there. Notice it is the same `ls` command, but specifying the bucket to list the contents of:
 
     ```
-    aws s3 ls s3://ds2002-mst3k/
+    aws s3 ls s3://ds2022-mst3k/
     ```
     which should return something like:
     ```
-    $ aws s3 ls s3://ds2002-mst3k/
+    $ aws s3 ls s3://ds2022-mst3k/
     2024-02-19 08:13:49     309510 vuelta.jpg
     ```
 
@@ -91,7 +89,7 @@ For example, this URL is to a publicly-accessible file within a publicly-accessi
     ```
     # https://s3.amazonaws.com/ + BUCKET_NAME + / FILE_PATH
     
-    https://s3.amazonaws.com/ds2002-mst3k/vuelta.jpg
+    https://s3.amazonaws.com/ds2022-mst3k/vuelta.jpg
     ```
     Test that URL using your web browser. What do you see?
 
@@ -99,7 +97,7 @@ For example, this URL is to a publicly-accessible file within a publicly-accessi
 
     The syntax for the command is:
     ```
-    aws s3 presign --expires-in 30 s3://ds2002-mst3k/vuelta.jpg
+    aws s3 presign --expires-in 30 s3://ds2022-mst3k/vuelta.jpg
 
     # The --expires-in flag is how many seconds the file should be public.
     # The s3:// is the BUCKET+FILE path to your specific file.
@@ -108,7 +106,7 @@ For example, this URL is to a publicly-accessible file within a publicly-accessi
     Once you issue this command, it will return a long URL with signature:
     
     ```
-    https://s3.amazonaws.com/ds2002-mst3k/pdfs/json-overview.pdf?AWSAccessKeyId=AKIAJLBYZFLFQQT256OQ&Signature=cjcY98KLjZ6CXbTnaZ9Srt8MQVM%3D&Expires=1708376373
+    https://s3.amazonaws.com/ds2022-mst3k/pdfs/json-overview.pdf?AWSAccessKeyId=AKIAJLBYZFLFQQT256OQ&Signature=cjcY98KLjZ6CXbTnaZ9Srt8MQVM%3D&Expires=1708376373
     ```
     
     Open that link in a browser - you should be able to see your file.
@@ -124,9 +122,7 @@ For example, this URL is to a publicly-accessible file within a publicly-accessi
 
 9. Update your bucket's ACL (Access Control List)
 
-    - Open the AWS Management Console to perform this task: 
-        - AWS Academy users click the "Download URL" button in the "AWS Details" panel of your Learner Lab. The URL in that file will sign you in automatically.
-        - Personal AWS account users should go to https://console.aws.amazon.com/ and sign in.
+    - Open the AWS Management Console to perform this task:  https://console.aws.amazon.com/
     - Within the AWS Management Console, open the S3 service and find your bucket.
     - Click the name of the bucket to get detailed settings.
     - Select the Permissions tab within your bucket settings.
@@ -147,13 +143,13 @@ For example, this URL is to a publicly-accessible file within a publicly-accessi
 
     For example:
     ```
-    aws s3 cp --acl public-read vuelta.jpg s3://ds2002-mst3k/
+    aws s3 cp --acl public-read vuelta.jpg s3://ds2022-mst3k/
     ```
 
 11. Test access
 
     Using the `bucket/file` path structure, construct the URL for your file like this: 
-    [`https://s3.amazonaws.com/ds2002-mst3k/vuelta.jpg`](https://s3.amazonaws.com/ds2002-mst3k/vuelta.jpg)
+    [`https://s3.amazonaws.com/ds2022-mst3k/vuelta.jpg`](https://s3.amazonaws.com/ds2022-mst3k/vuelta.jpg)
 
 12. Delete a file in your bucket. Using the AWS CLI, upload another image file to the bucket. List the bucket contents to confirm it has been uploaded. And, finallly, delete the file using this syntax:
 
@@ -162,11 +158,11 @@ For example, this URL is to a publicly-accessible file within a publicly-accessi
     ```
     For example
     ```
-    aws s3 rm s3://ds2002-mst3k/vuelta.jpg
+    aws s3 rm s3://ds2022-mst3k/vuelta.jpg
     ```
     And confirm the file has been deleted:
     ```
-    aws s3 ls s3://ds2002-mst3k/
+    aws s3 ls s3://ds2022-mst3k/
     ```
 
 13. To empty a bucket completely, a `--recursive` option is available:
@@ -207,8 +203,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import boto3
 >>>
 ```
-
-**NOTE**: If you get a Python 3.7 `PythonDeprecationWarning` that is to be expected. If you are using the AWS Academy Learner Lab you can get around this by explicitly invoking `python3.8` when you run Python.
 
 The following tasks assume you are able to import `boto3` successfully.
 
@@ -252,7 +246,7 @@ The following tasks assume you are able to import `boto3` successfully.
 4. To upload a file to your bucket:
 
     ```
-    bucket = 'ds2002-mst3k'
+    bucket = 'ds2022-mst3k'
     local_file = 'project/vuelta.jpg'
 
     resp = s3.put_object(
@@ -301,11 +295,11 @@ response = s3.generate_presigned_url(
     'get_object',
     Params={'Bucket': bucket_name, 'Key': object_name},
     ExpiresIn=expires_in
-    )
+)
 ```
 
 ## Submit your work
 
-Your two scripts should be put into a folder `ds2002-course/mywork/lab4` within your fork of the course repository -- added, committed, and pushed.
+Your scripts should be put into a folder `my-work/lab4` within your fork of the course repository -- added, committed, and pushed.
 
-Submit the GitHub URL for that folder into Canvas for grading.
+Submit the GitHub URL to that folder into Canvas for lab completion credit.
