@@ -1,11 +1,10 @@
 # Lab 4: S3 Storage
 
-Follow all the steps below for practice working with the S3 service in Amazon Web Services. Among several other tasks you will write two scripts for this lab. Create a folder within `my-work/` named `lab4` and put your scripts into that directory. Commit these to your forked copy of the course repository, and paste the GitHub URL to the folder into the answer for submission.
+Follow all the steps below for practice working with the S3 service in Amazon Web Services. Among several other tasks you will write two scripts for this lab. If you have not already, create a repository in your GitHub ac count named `ds2002-XXXX` where you replace `XXXX` with your UVA computing ID. Create a subdirectory `labs/` and within that a subdirectory named `lab4`. Within that directory commit the two scripts you write for this lab. Paste the URL to your GitHub repository in Canvas for grading.
 
-This lab requires that you have both the AWS CLI tool (with keys configured) and Python3 / `boto3` installed. Here is a [video](https://www.youtube.com/watch?v=Ug1KWMP6U1g&t=250s) that walks you through setting up those keys.
+This lab requires that you have a working Python3 environment and both the AWS CLI tool (with access keys configured) and Python3 / `boto3` installed. 
 
 Installations:
-- [Python3](https://www.python.org/downloads/)
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) - can be installed as a binary installer, or from `pip`: `python3 -m pip install awscli`
 - `boto3` - is a simple `pip` command in your terminal:
 ```bash
