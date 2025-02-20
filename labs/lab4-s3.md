@@ -287,6 +287,7 @@ Like the `bash` script you wrote above, now write a simple Python script that pe
   - Presign the file with an expiration time. Documentation for that method is [here](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-presigned-urls.html)
   - Output the presigned URL.
   - Test your script and be sure it works without error.
+  - BONUS: If you'd like to learn a new skill, try using the [`argparse`](https://docs.python.org/3/library/argparse.html) library to customize command-line arguments with a Python script. 
 
 Here is a snippet for generating a presigned URL:
 
