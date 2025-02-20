@@ -29,7 +29,7 @@ In this lab you will:
 6. Modify the bucket ACL to allow for public access.
 7. Upload a new file with public access enabled, and verify access.
 8. Upload a file and delete it.
-9. Finally, write Python3 scripts using the `boto3` library to upload one private file and one public file.
+9. Finally, write Python3 snippets using the `boto3` library to upload a private file, a public file, and to presign an object in S3.
 
 ## S3 Security and HTTP Access by URL
 
