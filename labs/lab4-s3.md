@@ -2,7 +2,7 @@
 
 Follow all the steps below for practice working with the S3 service in Amazon Web Services. Among several other tasks you will write two scripts for this lab. If you have not already, create a repository in your GitHub account named `ds2002-XXXX` where you replace `XXXX` with your UVA computing ID. Create a subdirectory `labs/` and within that a subdirectory named `lab4`. Within that directory commit the two scripts (as two separate files) you write for this lab. Paste the URL to your GitHub repository in Canvas for grading.
 
-This lab requires that you have a working Python3 environment and both the AWS CLI tool (with access keys configured) and Python3 / `boto3` installed. 
+This lab requires that you have a working Python3 environment and both the AWS CLI tool (with access keys configured) and Python3 / `boto3` installed. If you are using the AWS Academy Learner Lab, start the Learner Lab and then copy your AWS credentials into `~/.aws/credentials` on your local machine. Remember these credentials expire after 4 hours.
 
 Installations:
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) - can be installed as a binary installer, or using `pip`:
