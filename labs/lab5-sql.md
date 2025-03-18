@@ -9,7 +9,7 @@ To work with MySQL you have three options:
 3. For more advanced users who want a challenge, use a MySQL Docker container. Instructions are below:
 
 ### Docker
-1. As we did in class, run MySQL in a container on your laptop using the following command.
+1. Run MySQL in a container on your laptop using the following command.
 
     ```
     docker run -e MYSQL_ROOT_PASSWORD=abc123 -d mysql
