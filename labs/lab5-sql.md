@@ -2,8 +2,13 @@
 
 ## Setup
 
-1. As we did in class, run MySQL in a container on your laptop using the following command.
+To work with MySQL you have three options:
 
+1. Use the Amazon RDS instance you created before spring break.
+2. Use the instructor's RDS instance. Endpoint and credentials can be found [here]().
+3. For more advanced users who want a challenge, use a MySQL Docker container. Instructions are below:
+
+A. As we did in class, run MySQL in a container on your laptop using the following command.
     ```
     docker run -e MYSQL_ROOT_PASSWORD=abc123 -d mysql
     ```
@@ -16,26 +21,24 @@
     docker exec -it b7c5d3 bash
     ```
 
-2. Open a connection to the MysQL database by using the `mysql` command and using the root password you used when creating the container.
-
+B. Open a connection to the MysQL database by using the `mysql` command and using the root password you used when creating the container.
     ```
     mysql -u root -p
     ```
-
-    You will be prompted for the root password.
+    You will be prompted for the root password, which you passed in as an `ENV` variable when you issued the `docker run` command.
 
 ## Create a new database and table
 
 This project will create a simple database to track inventory and progress on processing datasets. Imagine there are 100 data files that must go through a multi-stage process and this DB is designed to keep a clear inventory of each file and where each one stands in the process.
 
-First, create a database in a `create` statement:
+First, create a database in a `create` statement. Name it the same as your UVA computind ID:
 ```
-create database inventory;
+create database mst3k;
 ```
 
 Next, select your database by name in a `use` statement:
 ```
-use inventory;
+use mst3k;
 ```
 Then create a table:
 ```
