@@ -1,4 +1,4 @@
-# Lab 7 - Structured Query Language (SQL)
+# Lab 5 - Structured Query Language (SQL)
 
 ## Setup
 
