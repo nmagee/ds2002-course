@@ -31,7 +31,7 @@ B. Open a connection to the MysQL database by using the `mysql` command and usin
 
 This project will create a simple database to track inventory and progress on processing datasets. Imagine there are 100 data files that must go through a multi-stage process and this DB is designed to keep a clear inventory of each file and where each one stands in the process.
 
-First, create a database in a `create` statement. Name it the same as your UVA computind ID:
+First, create a database in a `create` statement. Name it the same as your UVA computing ID:
 ```
 create database mst3k;
 ```
