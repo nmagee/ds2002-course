@@ -4,7 +4,7 @@
 
 To work with MySQL you have three options:
 
-1. Use the Amazon RDS instance you created before spring break.
+1. Use your own Amazon RDS instance you created before spring break.
 2. Use the instructor's RDS instance. Endpoint and credentials can be found [here](https://canvas.its.virginia.edu/courses/139395/pages/mysql-service).
 3. For more advanced users who want a challenge, use a MySQL Docker container. Instructions are below:
 
