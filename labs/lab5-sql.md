@@ -8,7 +8,7 @@ To work with MySQL you have three options:
 2. Use the instructor's RDS instance. Endpoint and credentials can be found [here](https://canvas.its.virginia.edu/courses/139395/pages/mysql-service).
 3. For more advanced users who want a challenge, use a MySQL Docker container. Instructions are below:
 
-### Docker
+### Running MySQL in Docker
 1. Run MySQL in a container on your laptop using the following command.
 
     ```
